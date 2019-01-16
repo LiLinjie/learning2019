@@ -1,24 +1,26 @@
 import { combineReducers } from 'redux';
-import { INCREASE, DECREASE, RESET } from './actionsTypes';
+import { START, STOP, RESET, RUN_TIMER } from './actionsTypes';
 
 const defaultState = {
-  count: 5,
-  factor: 1
+  seconds: 0,
+  runStatus: false
 }
 
-function counter(state = defaultState, action) {
+function timer (state = defaultState, action) {
   switch (action.type) {
-    case INCREASE:
-      return { ...state, count: state.count + state.factor };
-    case DECREASE:
-      return { ...state, count: state.count - state.factor };
+    case START:
+      return { ...state, runStatus: true };
+    case STOP:
+      return { ...state, runStatus: false };
     case RESET:
-      return { ...state, count: 0 };
+      return { ...state, seconds: 0 };
+    case RUN_TIMER:
+      return { ...state, seconds: state.seconds + 1 };
     default:
       return state;
   }
 }
 
 export default combineReducers({
-  counter
+  timer
 });

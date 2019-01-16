@@ -1,11 +1,13 @@
-import { INCREASE, DECREASE, RESET } from './actionsTypes';
+import { START, STOP, RESET, RUN_TIMER } from './actionsTypes';
 
-const increase = () => ({ type: INCREASE });
-const decrease = () => ({ type: DECREASE });
+const start = () => ({ type: START });
+const stop = () => ({ type: STOP });
 const reset = () => ({ type: RESET });
+const runTime = () => ({ type: RUN_TIMER });
 
 export {
-  increase,
-  decrease,
-  reset
+  start,
+  stop,
+  reset,
+  runTime,
 }
