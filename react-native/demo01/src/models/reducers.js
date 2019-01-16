@@ -6,7 +6,7 @@ const defaultState = {
   runStatus: false
 }
 
-function timer (state = defaultState, action) {
+export function timer (state = defaultState, action) {
   switch (action.type) {
     case START:
       return { ...state, runStatus: true };
@@ -20,7 +20,3 @@ function timer (state = defaultState, action) {
       return state;
   }
 }
-
-export default combineReducers({
-  timer
-});

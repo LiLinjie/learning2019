@@ -10,10 +10,10 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <PersistGate
-          loading={PageLoading}
+          loading={<PageLoading/>}
           persistor={persistor}
         >
-          <Home />
+          <Home/>
         </PersistGate>
       </Provider>
     )

@@ -1,8 +1,9 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
-import reducers from './reducers';
+import * as reducers from './reducers';
 import { persistStore, persistCombineReducers } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
 const config = {
   key: 'root',
