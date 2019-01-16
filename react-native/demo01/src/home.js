@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { reset, start, stop } from './models/action';
 
 type Props = {};
+@connect(state => ({timer: state.timer}))
 class Home extends Component<Props> {
   _onPressReset () {
     this.props.dispatch(reset());
@@ -61,8 +62,4 @@ const styles = StyleSheet.create({
   }
 });
 
-const mapStateToProps = state => ({
-  timer: state.timer
-});
-
-export default connect(mapStateToProps)(Home);
+export default Home;
