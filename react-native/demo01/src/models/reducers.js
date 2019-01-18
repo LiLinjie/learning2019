@@ -1,22 +1,8 @@
 import { combineReducers } from 'redux';
-import { START, STOP, RESET, RUN_TIMER } from './actionsTypes';
+import * as user from './users/reducer';
+import nav from './nav/reducer';
 
-const defaultState = {
-  seconds: 0,
-  runStatus: false
-}
-
-export function timer (state = defaultState, action) {
-  switch (action.type) {
-    case START:
-      return { ...state, runStatus: true };
-    case STOP:
-      return { ...state, runStatus: false };
-    case RESET:
-      return { ...state, seconds: 0 };
-    case RUN_TIMER:
-      return { ...state, seconds: state.seconds + 1 };
-    default:
-      return state;
-  }
-}
+export default combineReducers({
+  nav,
+  user: combineReducers(user)
+});

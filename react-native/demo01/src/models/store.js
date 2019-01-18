@@ -1,30 +1,24 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import createSagaMiddleware, { END } from 'redux-saga';
 import createLogger from 'redux-logger';
-import thunk from 'redux-thunk';
-import * as reducers from './reducers';
-import { persistStore, persistCombineReducers } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
+import rootReducer from './reducers';
+import sagas from './sagas';
 
-const config = {
-  key: 'root',
-  storage
-}
 const configureStore = preloadedState  => {
-  let reducer = persistCombineReducers(config, reducers);
+  const sagaMiddleware = createSagaMiddleware();
   let store = createStore(
-    reducer,
+    rootReducer,
     preloadedState,
     compose(
-      applyMiddleware(thunk, createLogger)
+      applyMiddleware(sagaMiddleware, createLogger)
     )
   );
-  let persistor = persistStore(store);
-  return { persistor, store };
+
+  sagaMiddleware.run(sagas);
+  store.close = () => store.dispatch(END);
+  return store;
 };
 
-const { persistor, store } = configureStore();
+const store = configureStore();
 
-export {
-  persistor,
-  store,
-};
+export default store;
