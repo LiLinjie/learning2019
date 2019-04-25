@@ -4,7 +4,6 @@ import RootContainer from './RootContainer';
 import PageLoading from './components/PageLoading';
 import store from './models/store';
 import { StyleProvider, Root } from 'native-base';
-import CompRoot from './components/Root';
 
 export default class App extends Component {
   render () {
