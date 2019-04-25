@@ -1,0 +1,12 @@
+@import "var";
+@import "reset";
+
+body {
+  color: $font-color;
+  background: $bg-color;
+}
+
+a {
+  color: $theme-color;
+  text-decoration: none;
+}
