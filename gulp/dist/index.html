@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>我的2018悦惠年度报告</title>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <script>
+    window.onresize=function dpr(){var d=document;var desWidth=750;var _dpr=(1/window.devicePixelRatio);_dpr=1;var _MaxWidth=414*window.devicePixelRatio;var userAgent=navigator.userAgent;var widthStr="device-width";var isMobile=true;var iWidth=0;var _html=d.getElementsByTagName("html")[0];if(userAgent.toLowerCase().indexOf("iphone")==-1&&userAgent.toLowerCase().indexOf("android")==-1){isMobile=false;widthStr=iWidth+"px"}d.querySelector('[name="viewport"]').setAttribute("content","width="+widthStr+" , initial-scale="+_dpr+", maximum-scale="+_dpr+", minimum-scale="+_dpr+", user-scalable=no, viewport-fit=cover");iWidth=Math.min(d.documentElement.clientWidth,window.innerWidth);if(!isMobile){iWidth=_MaxWidth}_html.style.fontSize=(((100*iWidth)/desWidth))+"px";_html.dataset.dpr=1};window.onresize();
+  </script>
+  <link rel="stylesheet" href="//img-cows.kkkd.com/swiper.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="loading-box">
+  <div class="wrap">
+    <div class="logo ani"></div>
+    <div class="box">
+      <div class="dot"></div>
+      <div class="sandglass"></div>
+      <div class="book"></div>
+      <div class="splash1"></div>
+      <div class="splash2"></div>
+      <div class="splash3"></div>
+      <div class="splash4"></div>
+      <div class="splash5"></div>
+      <p class="loading">年度账单生成中...</p>
+    </div>
+  </div>
+</div>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide section1">
+      <div class="bg"></div>
+      <div class="text-box">
+        <h3>309天</h3>
+        <p>不知不觉中</p>
+        <p>我和悦惠一起走过了<span>309</span>个日夜</p>
+        <p>注册时间早于<span>90%</span>的悦惠家人</p>
+      </div>
+      <div class="arrow"></div>
+    </div>
+    <div class="swiper-slide section2">
+      <div class="chart-box">
+        <h3>我的悦惠购物清单</h3>
+        <div class="chart">
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="toothbg"></div>
+      </div>
+      <div class="text-box">
+        <h3>38182938元</h3>
+        <p>过去一年，通过悦惠</p>
+        <p>累计消费<span>38812881288</span>元</p>
+        <p>领券省下<span>3919391949</span>元</p>
+        <p>赚取佣金<span>3919994</span>元</p>
+        <p>超过了<span>10%</span>的人</p>
+      </div>
+      <div class="arrow"></div>
+    </div>
+    <div class="swiper-slide section3">
+      <div class="line-bg"></div>
+      <div class="text-box">
+        <h3>2135亿</h3>
+        <p>今年双十一</p>
+        <p>我与悦惠一起参与了一个<span>2135亿</span>的项目</p>
+        <p>其中悦惠贡献了<span>8亿</span>成交额</p>
+        <p>为悦惠家人们赚到超过<span>3000万</span>佣金</p>
+      </div>
+      <div class="num-box">
+        <p>交易额</p>
+        <p><strong>8亿</strong></p>
+      </div>
+      <div class="redbag"></div>
+      <div class="arrow"></div>
+    </div>
+    <div class="swiper-slide section4">
+      <div class="text-box">
+        <h3>394人</h3>
+        <p>在我的推荐下</p>
+        <p>一共有<span>394</span>人一起安装使用悦惠</p>
+        <p>我希望有更多朋友加入到我们悦惠省钱大军中</p>
+      </div>
+      <div class="person-box">
+        <img src="//img-cows.kkkd.com/2019/yh/annualBill/person1.png" class="person1 person" />
+        <img src="//img-cows.kkkd.com/2019/yh/annualBill/person2.png" class="person2 person" />
+        <img src="//img-cows.kkkd.com/2019/yh/annualBill/person3.png" class="person3 person" />
+        <img src="//img-cows.kkkd.com/2019/yh/annualBill/person4.png" class="person4 person" />
+        <img src="//img-cows.kkkd.com/2019/yh/annualBill/person5.png" class="person5 person-move" />
+        <img src="//img-cows.kkkd.com/2019/yh/annualBill/person6.png" class="person6 person-move" />
+        <img src="//img-cows.kkkd.com/2019/yh/annualBill/person7.png" class="person7 person-move" />
+        <img src="//img-cows.kkkd.com/2019/yh/annualBill/person8.png" class="person8 person-move" />
+      </div>
+      <div class="arrow"></div>
+    </div>
+    <div class="swiper-slide section5">
+      <div class="year"></div>
+      <div class="text-box">
+        <p>我将于悦惠一起</p>
+        <p>继续砥砺前行</p>
+      </div>
+      <div class="redbag"></div>
+      <button class="btn">下载了解更多</button>
+    </div>
+  </div>
+</div>
+<script src="//img-cows.kkkd.com/h5/res/jquery-2.1.1.min.js"></script>
+<script src="//img-cows.kkkd.com/swiper.min.js"></script>
+<script src="swiper.animate1.0.3.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1004 @@
+@-webkit-keyframes lineBg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lineBg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate3d(0, 200%, 0);
+            transform: translate3d(0, 200%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes move {
+  0% {
+    -webkit-transform: translate3d(0, 200%, 0);
+            transform: translate3d(0, 200%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes dot {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes dot {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes sandglass {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes sandglass {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes splash1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2.15rem, 1.19rem, 0) scale(0);
+            transform: translate3d(-2.15rem, 1.19rem, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes splash1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2.15rem, 1.19rem, 0) scale(0);
+            transform: translate3d(-2.15rem, 1.19rem, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@-webkit-keyframes splash2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2.08rem, 1.99rem, 0) scale(0);
+            transform: translate3d(2.08rem, 1.99rem, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes splash2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2.08rem, 1.99rem, 0) scale(0);
+            transform: translate3d(2.08rem, 1.99rem, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@-webkit-keyframes splash3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2.2rem, -0.85rem, 0) scale(0);
+            transform: translate3d(2.2rem, -0.85rem, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes splash3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2.2rem, -0.85rem, 0) scale(0);
+            transform: translate3d(2.2rem, -0.85rem, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@-webkit-keyframes splash4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1.8rem, -0.92rem, 0) scale(0);
+            transform: translate3d(-1.8rem, -0.92rem, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes splash4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1.8rem, -0.92rem, 0) scale(0);
+            transform: translate3d(-1.8rem, -0.92rem, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@-webkit-keyframes splash5 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(1.18rem, 1.32rem, 0) scale(0);
+            transform: translate3d(1.18rem, 1.32rem, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes splash5 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(1.18rem, 1.32rem, 0) scale(0);
+            transform: translate3d(1.18rem, 1.32rem, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    width: 7em;
+  }
+  100% {
+    width: 8em;
+  }
+}
+@keyframes loading {
+  0% {
+    width: 7em;
+  }
+  100% {
+    width: 8em;
+  }
+}
+@-webkit-keyframes bigText {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes bigText {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes personMove {
+  0% {
+    -webkit-transform: translate3d(0, 200%, 0);
+            transform: translate3d(0, 200%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes personMove {
+  0% {
+    -webkit-transform: translate3d(0, 200%, 0);
+            transform: translate3d(0, 200%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes arrowUp {
+  0% {
+    -webkit-transform: translate3d(0, 0.1rem, 0);
+            transform: translate3d(0, 0.1rem, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0.1rem, 0);
+            transform: translate3d(0, 0.1rem, 0);
+  }
+}
+@keyframes arrowUp {
+  0% {
+    -webkit-transform: translate3d(0, 0.1rem, 0);
+            transform: translate3d(0, 0.1rem, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0.1rem, 0);
+            transform: translate3d(0, 0.1rem, 0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 7.5rem;
+  margin: 0 auto;
+  font-family: Helvetica;
+}
+.text-box {
+  padding: .9rem 0 0 .7rem;
+  color: #D66E30;
+}
+.text-box p {
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-box span {
+  font-size: .54rem;
+  color: #EA0007;
+  margin: 0 .2rem;
+}
+.text-box h3 {
+  display: inline-block;
+  font-size: .56rem;
+  font-weight: normal;
+  line-height: .78rem;
+  margin-bottom: .2rem;
+  color: #EA0007;
+  opacity: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.ani .text-box h3 {
+  -webkit-animation: opacity 1s 1.2s ease-in forwards;
+          animation: opacity 1s 1.2s ease-in forwards;
+}
+.ani .text-box p {
+  -webkit-animation: opacity 1s 1.2s ease-in forwards;
+          animation: opacity 1s 1.2s ease-in forwards;
+}
+.arrow {
+  position: absolute;
+  bottom: .7rem;
+  width: .59rem;
+  height: 1.24rem;
+  -webkit-transform: translate3d(0, 200%, 0);
+          transform: translate3d(0, 200%, 0);
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/arrow2.png") no-repeat top;
+  -webkit-background-size: .59rem .59rem;
+          background-size: .59rem;
+}
+.ani .arrow {
+  -webkit-animation: arrowUp .5s infinite;
+          animation: arrowUp .5s infinite;
+}
+.swiper-container {
+  display: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: .38rem;
+  line-height: .53rem;
+}
+.loading-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 7.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #FFD832;
+  font-size: .38rem;
+  font-weight: bold;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffcc38), to(#ffb600));
+  background: -webkit-linear-gradient(#ffcc38, #ffb600);
+  background: linear-gradient(#ffcc38, #ffb600);
+}
+.loading-box .wrap {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 7.5rem;
+  height: 10.93rem;
+  margin-top: -5.465rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/section1-bg.png?v=1") no-repeat center;
+  -webkit-background-size: 7.5rem 7.5rem;
+          background-size: 7.5rem;
+}
+.loading-box .logo {
+  position: absolute;
+  top: 2.7rem;
+  left: 0;
+  right: 0;
+  width: 1.07rem;
+  height: .82rem;
+  margin: 0 auto;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/logo.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-animation: logo ease-in-out 2s;
+          animation: logo ease-in-out 2s;
+}
+.loading-box .box {
+  position: absolute;
+  top: 3.86rem;
+  left: 0;
+  right: 0;
+  height: 9rem;
+  -webkit-transform: translate3d(0, 200%, 0);
+          transform: translate3d(0, 200%, 0);
+  -webkit-animation: move ease-in 1s forwards;
+          animation: move ease-in 1s forwards;
+}
+.loading-box .dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 5.28rem;
+  height: 2.87rem;
+  margin: 0 auto;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/dot.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-animation: dot ease-in 0.8s infinite;
+          animation: dot ease-in 0.8s infinite;
+}
+.loading-box .book {
+  position: absolute;
+  top: 1.86rem;
+  left: 1.82rem;
+  width: 3.89rem;
+  height: 1.99rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/book.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.loading-box .sandglass {
+  position: absolute;
+  top: .53rem;
+  left: 3.1rem;
+  width: 1.43rem;
+  height: 1.51rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/%E5%9B%BE%E5%B1%82%201.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  -webkit-animation: sandglass ease-in-out 1s 1s;
+          animation: sandglass ease-in-out 1s 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.loading-box .splash1 {
+  position: absolute;
+  top: 1.68rem;
+  right: 1.6rem;
+  width: .6rem;
+  height: .7rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/splash01.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  opacity: 0;
+  -webkit-transform: translate3d(-2.15rem, 1.19rem, 0) scale(0);
+          transform: translate3d(-2.15rem, 1.19rem, 0) scale(0);
+  -webkit-animation: splash1 ease-in-out 1s 1s forwards;
+          animation: splash1 ease-in-out 1s 1s forwards;
+}
+.loading-box .splash2 {
+  position: absolute;
+  top: .8rem;
+  left: 1.53rem;
+  width: .64rem;
+  height: .58rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/splash02.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  opacity: 0;
+  -webkit-transform: translate3d(2.08rem, 1.99rem, 0) scale(0);
+          transform: translate3d(2.08rem, 1.99rem, 0) scale(0);
+  -webkit-animation: splash2 ease-in-out 1s 1s forwards;
+          animation: splash2 ease-in-out 1s 1s forwards;
+}
+.loading-box .splash3 {
+  position: absolute;
+  top: 2.88rem;
+  left: 1.55rem;
+  width: 1.13rem;
+  height: .82rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/splash03.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  opacity: 0;
+  -webkit-transform: translate3d(2.2rem, -0.85rem, 0) scale(0);
+          transform: translate3d(2.2rem, -0.85rem, 0) scale(0);
+  -webkit-animation: splash3 ease-in-out 1s 1s forwards;
+          animation: splash3 ease-in-out 1s 1s forwards;
+}
+.loading-box .splash4 {
+  position: absolute;
+  top: 3.34rem;
+  right: 1.96rem;
+  width: .83rem;
+  height: .42rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/splash04.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  opacity: 0;
+  -webkit-transform: translate3d(-1.8rem, -0.92rem, 0) scale(0);
+          transform: translate3d(-1.8rem, -0.92rem, 0) scale(0);
+  -webkit-animation: splash4 ease-in-out 1s 1s forwards;
+          animation: splash4 ease-in-out 1s 1s forwards;
+}
+.loading-box .splash5 {
+  position: absolute;
+  top: 1.5rem;
+  left: 2.6rem;
+  width: 2.27rem;
+  height: .38rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/splash05.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  opacity: 0;
+  -webkit-transform: translate3d(1.18rem, 1.32rem, 0) scale(0);
+          transform: translate3d(1.18rem, 1.32rem, 0) scale(0);
+  -webkit-animation: splash5 ease-in-out 1s 1s forwards;
+          animation: splash5 ease-in-out 1s 1s forwards;
+}
+.loading-box .loading {
+  position: absolute;
+  left: 2.24rem;
+  top: 4rem;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: loading ease-in-out 2s infinite;
+          animation: loading ease-in-out 2s infinite;
+}
+.swiper-slide {
+  overflow: hidden;
+}
+.section1 {
+  background: #FFEBC7;
+}
+.section1 .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: #FFEBC7 url("//img-cows.kkkd.com/2019/yh/annualBill/section2-bg.png") no-repeat bottom;
+  -webkit-background-size: 7.5rem 7.5rem;
+          background-size: 7.5rem;
+}
+.section1 .text-box {
+  position: relative;
+}
+.section1 .arrow {
+  left: .95rem;
+}
+.section1.ani .bg {
+  -webkit-animation: opacity 1s forwards;
+          animation: opacity 1s forwards;
+}
+.section1.ani .text-box h3 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.section1.ani .text-box p:nth-child(2) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+.section1.ani .text-box p:nth-child(3) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+.section1.ani .text-box p:nth-child(4) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+.section1.ani .arrow {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.section2 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#FFC4C4));
+  background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #FFC4C4 100%);
+  background-image: linear-gradient(0deg, #FFFFFF 0%, #FFC4C4 100%);
+}
+.section2 .chart-box {
+  position: relative;
+  text-align: center;
+  height: 50vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ededed), color-stop(11%, #f3f3f3), to(#FFFFFF));
+  background-image: -webkit-linear-gradient(bottom, #ededed 0%, #f3f3f3 11%, #FFFFFF 100%);
+  background-image: linear-gradient(0deg, #ededed 0%, #f3f3f3 11%, #FFFFFF 100%);
+  -webkit-box-shadow: 0.04rem 0 0.1rem 0 rgba(210, 176, 119, 0.72);
+          box-shadow: 0.04rem 0 0.1rem 0 rgba(210, 176, 119, 0.72);
+}
+.section2 .chart-box h3 {
+  font-size: .38rem;
+  line-height: .53rem;
+  padding: .32rem 0 .1rem;
+  margin: 0 .67rem;
+  font-weight: normal;
+  color: #4A4A4A;
+  border-bottom: 2px dotted #979797;
+}
+.section2 .chart-box .chart {
+  width: 7.5rem;
+  height: calc(50vh - .95rem);
+}
+.section2 .chart-box .toothbg {
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  right: 0;
+  height: .59rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/border-bg.png") repeat-x;
+  -webkit-background-size: 7.5rem 7.5rem;
+          background-size: 7.5rem;
+}
+.section2 .text-box {
+  padding: .58rem 0 0 .67rem;
+  color: #D66E30;
+}
+.section2 .text-box span {
+  font-size: .38rem;
+}
+.section2 .arrow {
+  right: .67rem;
+}
+.section2.ani .text-box h3 {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.section2.ani .text-box p:nth-child(2) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.section2.ani .text-box p:nth-child(3) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+.section2.ani .text-box p:nth-child(4) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+.section2.ani .text-box p:nth-child(5) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+.section2.ani .text-box p:nth-child(6) {
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
+}
+.section2.ani .arrow {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.section3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F0003D), color-stop(85%, #FF6F6F));
+  background-image: -webkit-linear-gradient(top, #F0003D 0%, #FF6F6F 85%);
+  background-image: linear-gradient(-180deg, #F0003D 0%, #FF6F6F 85%);
+}
+.section3 .text-box {
+  position: relative;
+  padding: .98rem 0 0 .44rem;
+  color: #FFA773;
+}
+.section3 .text-box h3 {
+  color: #FFD832;
+}
+.section3 .text-box span {
+  margin: 0;
+  font-size: .38rem;
+  color: #FFD832;
+}
+.section3 .num-box {
+  position: absolute;
+  bottom: 3.2rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: .8rem;
+  font-weight: bolder;
+  line-height: 1.12rem;
+  color: #FDF1E6;
+  text-shadow: 0 0.1rem 0.1rem rgba(93, 0, 0, 0.19);
+}
+.section3 .num-box p {
+  -webkit-transform: translate3d(0, 1000%, 0);
+          transform: translate3d(0, 1000%, 0);
+}
+.section3 .num-box strong {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #FDF1E6;
+  letter-spacing: 0;
+  text-shadow: 0 0.1rem 0.1rem rgba(93, 0, 0, 0.22);
+}
+.section3 .arrow {
+  background-image: url("//img-cows.kkkd.com/2019/yh/annualBill/arrow4.png");
+  left: .6rem;
+}
+.section3 .line-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 7.5rem;
+  height: 100%;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/line.png") no-repeat bottom;
+  -webkit-background-size: 7.5rem 7.5rem;
+          background-size: 7.5rem;
+  opacity: 0;
+}
+.section3 .redbag {
+  position: absolute;
+  bottom: 0;
+  left: 2.26rem;
+  width: 3rem;
+  height: 2.99rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/redbag.png") no-repeat bottom;
+  -webkit-background-size: 3rem 3rem;
+          background-size: 3rem;
+  -webkit-transform: translate3d(0, 200%, 0);
+          transform: translate3d(0, 200%, 0);
+}
+.section3.ani .text-box h3 {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.section3.ani .text-box p:nth-child(2) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.section3.ani .text-box p:nth-child(3) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+.section3.ani .text-box p:nth-child(4) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+.section3.ani .text-box p:nth-child(5) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+.section3.ani .num-box p {
+  -webkit-animation: bigText 0.3s 0.5s ease-in forwards;
+          animation: bigText 0.3s 0.5s ease-in forwards;
+}
+.section3.ani .line-bg {
+  -webkit-animation: opacity ease-in 0.5s forwards;
+          animation: opacity ease-in 0.5s forwards;
+}
+.section3.ani .redbag {
+  -webkit-animation: move 0.5s ease-in forwards;
+          animation: move 0.5s ease-in forwards;
+}
+.section3.ani .arrow {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.section4 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#FFEE61), to(#FFCF00));
+  background-image: -webkit-linear-gradient(bottom, #FFEE61 0%, #FFCF00 100%);
+  background-image: linear-gradient(0deg, #FFEE61 0%, #FFCF00 100%);
+}
+.section4 .text-box {
+  padding: .99rem 0 0 .88rem;
+  color: #4A4A4A;
+}
+.section4 .person-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6.06rem;
+}
+.section4 .person-box .person1 {
+  right: 0;
+  bottom: 0;
+  width: 1.44rem;
+  height: 4.91rem;
+}
+.section4 .person-box .person2 {
+  z-index: 5;
+  right: 2.26rem;
+  bottom: 0;
+  width: 1.75rem;
+  height: 4.15rem;
+}
+.section4 .person-box .person3 {
+  z-index: 6;
+  bottom: 0;
+  left: .35rem;
+  width: 2.08rem;
+  height: 3.72rem;
+}
+.section4 .person-box .person4 {
+  left: 0;
+  bottom: 0;
+  width: 1.33rem;
+  height: 4.38rem;
+}
+.section4 .person-box .person5 {
+  top: .16rem;
+  left: .36rem;
+  width: 3.38rem;
+  height: 4.27rem;
+}
+.section4 .person-box .person6 {
+  z-index: 8;
+  bottom: 0;
+  right: .24rem;
+  width: 3.77rem;
+  height: 3.76rem;
+}
+.section4 .person-box .person7 {
+  z-index: 7;
+  left: 1.34rem;
+  bottom: 0;
+  width: 3.77rem;
+  height: 4.56rem;
+}
+.section4 .person-box .person8 {
+  right: .45rem;
+  width: 3.39rem;
+  height: 4.54rem;
+}
+.section4 .person-box .person {
+  position: absolute;
+  opacity: 0;
+}
+.section4 .person-box .person-move {
+  position: absolute;
+  -webkit-transform: translate3d(0, 200%, 0);
+          transform: translate3d(0, 200%, 0);
+}
+.section4 .arrow {
+  background-image: url("//img-cows.kkkd.com/2019/yh/annualBill/arrow4.png");
+  left: .88rem;
+  z-index: 10;
+}
+.section4.ani .text-box p:nth-child(2) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.section4.ani .text-box p:nth-child(3) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.section4.ani .text-box p:nth-child(4) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+.section4.ani .text-box p:nth-child(5) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+.section4.ani .person {
+  -webkit-animation: opacity 0.5s ease-in forwards;
+          animation: opacity 0.5s ease-in forwards;
+}
+.section4.ani .person-move {
+  -webkit-animation: personMove 1s ease-in forwards;
+          animation: personMove 1s ease-in forwards;
+}
+.section4.ani .person-move:nth-child(5) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.section4.ani .person-move:nth-child(6) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.section4.ani .person-move:nth-child(8) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.section4.ani .arrow {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.section5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: -webkit-radial-gradient(4.3rem circle, #453C83, #272856);
+  background-image: radial-gradient(4.3rem circle, #453C83, #272856);
+}
+.section5 .year {
+  width: 3.83rem;
+  height: .81rem;
+  margin: 0 auto .2rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/2019.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.section5 .text-box {
+  margin-bottom: .2rem;
+  padding: 0;
+  text-align: center;
+  font-size: .64rem;
+  font-weight: bold;
+  line-height: .9rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFE251), to(#FFC200));
+  background: -webkit-linear-gradient(#FFE251, #FFC200);
+  background: linear-gradient(#FFE251, #FFC200);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.section5 .text-box p {
+  opacity: 1;
+}
+.section5 .redbag {
+  position: relative;
+  width: 3.63rem;
+  height: 4.37rem;
+  margin: 0 auto .647rem;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/redbag6.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.section5 .btn {
+  width: 3.65rem;
+  height: 1.15rem;
+  padding-bottom: .05rem;
+  font-size: .38rem;
+  font-weight: bold;
+  color: #C34C27;
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/btn.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  border: none;
+}
+.section5 .download-btn {
+  display: none;
+}
+.section5.ani .text-box p {
+  opacity: 1;
+  -webkit-animation: none;
+          animation: none;
+}

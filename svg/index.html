@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+    .red {
+      fill: red;  /*填充色*/
+      stroke: #61dafb;  /*描边色*/
+      stroke-width: 3px;  /*边框宽度*/
+    }
+  </style>
+</head>
+<body>
+<svg width="100%" height="100%">
+  <circle id="mycircle" cx="50" cy="50" r="50" />   <!--绘制圆形-->
+  <circle id="mycircle2" cx="50" cy="50" r="50" class="red" />   <!--绘制圆形-->
+  <line x1="0" y1="100" x2="200" y2="100" style="stroke:rgb(0,0,0);stroke-width:5" />  <!--绘制直线-->
+  <polyline points="3,103 30,128 3,153" fill="none" stroke="black" />  <!--绘制折线-->
+  <rect x="0" y="150" height="100" width="200" style="stroke: #70d5dd; fill: #dd524b" />  <!--绘制矩形-->
+  <ellipse cx="260" cy="60" ry="40" rx="20" stroke="black" stroke-width="5" fill="silver"/><!--绘制椭圆-->
+  <polygon fill="green" stroke="orange" stroke-width="1" points="350,0 450,0 450,100 350,100, 300,50 350,0"/><!--绘制多边形-->
+  <path d="
+    M 418,3
+    L 446,3
+    L 446,40
+    L 461,40
+    L 432,68
+    L 403,40
+    L 418,40
+    Z
+  "></path> <!--绘制路径  M：移动到（moveto）L：画直线到（lineto） Z:闭合路径-->
+  <text x="250" y="125">Hello World</text> <!--绘制文本-->
+  <use href="#mycircle" x="310" y="100" fill="blue" /> <!-- <use>标签用于复制一个形状 -->
+  <g id="myCircle">
+    <text x="25" y="20">圆形</text>
+    <circle cx="50" cy="50" r="20"/>
+  </g>  <!-- <g>标签用于将多个形状组成一个组（group） -->
+
+  <defs>
+    <g id="myCircle">
+      <text x="225" y="220">圆形</text>
+      <circle cx="250" cy="250" r="20"/>
+    </g>
+  </defs><!-- <defs>标签用于自定义形状，它内部的代码不会显示，仅供引用 -->
+  <use href="#myCircle" x="0" y="300" />
+
+  <defs>
+    <pattern id="dots" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <circle fill="#bee9e8" cx="50" cy="50" r="5" />
+    </pattern>
+  </defs>
+  <rect x="200" y="200" width="100" height="100" fill="url(#dots)" />
+</svg>
+</body>
+</html>

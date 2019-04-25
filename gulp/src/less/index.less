@@ -1,0 +1,603 @@
+@import "animates";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 7.5rem;
+  margin: 0 auto;
+  font-family: Helvetica;
+}
+.text-box {
+  padding: .9rem 0 0 .7rem;
+  color: #D66E30;
+  p {
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  span {
+    font-size: .54rem;
+    color: #EA0007;
+    margin: 0 .2rem;
+  }
+  h3 {
+    display: inline-block;
+    font-size: .56rem;
+    font-weight: normal;
+    line-height: .78rem;
+    margin-bottom: .2rem;
+    color: #EA0007;
+    opacity: 0;
+    transform-origin: center;
+  }
+}
+.ani {
+  .text-box {
+    h3 {
+      animation: opacity 1s 1.2s ease-in forwards;
+    }
+    p {
+      animation: opacity 1s 1.2s ease-in forwards;
+    }
+  }
+}
+.arrow {
+  position: absolute;
+  bottom: .7rem;
+  width: .59rem;
+  height: 1.24rem;
+  transform: translate3d(0, 200%, 0);
+  background: url("//img-cows.kkkd.com/2019/yh/annualBill/arrow2.png") no-repeat top;
+  background-size: .59rem;
+}
+.ani .arrow {
+  animation: arrowUp .5s infinite;
+}
+.swiper-container {
+  display: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: .38rem;
+  line-height: .53rem;
+}
+.loading-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 7.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #FFD832;
+  font-size: .38rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(#ffcc38, #ffb600);
+  .wrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 7.5rem;
+    height: 10.93rem;
+    margin-top: -5.465rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/section1-bg.png?v=1") no-repeat center;
+    background-size: 7.5rem;
+  }
+  .logo{
+    position: absolute;
+    top: 2.7rem;
+    left: 0;
+    right: 0;
+    width: 1.07rem;
+    height: .82rem;
+    margin: 0 auto;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/logo.png") no-repeat;
+    background-size: cover;
+    animation: logo ease-in-out 2s;
+  }
+  .box {
+    position: absolute;
+    top: 3.86rem;
+    left: 0;
+    right: 0;
+    height: 9rem;
+    transform: translate3d(0, 200%, 0);
+    animation: move ease-in 1s forwards;
+  }
+  .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 5.28rem;
+    height: 2.87rem;
+    margin: 0 auto;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/dot.png") no-repeat;
+    background-size: cover;
+    animation: dot ease-in .8s infinite;
+  }
+  .book {
+    position: absolute;
+    top: 1.86rem;
+    left: 1.82rem;
+    width: 3.89rem;
+    height: 1.99rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/book.png") no-repeat;
+    background-size: cover;
+  }
+  .sandglass {
+    position: absolute;
+    top: .53rem;
+    left: 3.1rem;
+    width: 1.43rem;
+    height: 1.51rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/%E5%9B%BE%E5%B1%82%201.png") no-repeat;
+    background-size: cover;
+    transform: translate3d(0, 100%, 0);
+    animation: sandglass ease-in-out 1s 1s;
+    animation-fill-mode: forwards;
+  }
+  .splash1 {
+    position: absolute;
+    top: 1.68rem;
+    right: 1.6rem;
+    width: .6rem;
+    height: .7rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/splash01.png") no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transform: translate3d(-2.15rem, 1.19rem, 0) scale(0);
+    animation: splash1 ease-in-out 1s 1s forwards;
+  }
+  .splash2 {
+    position: absolute;
+    top: .8rem;
+    left: 1.53rem;
+    width: .64rem;
+    height: .58rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/splash02.png") no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transform: translate3d(2.08rem, 1.99rem, 0) scale(0);
+    animation: splash2 ease-in-out 1s 1s forwards;
+  }
+  .splash3 {
+    position: absolute;
+    top: 2.88rem;
+    left: 1.55rem;
+    width: 1.13rem;
+    height: .82rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/splash03.png") no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transform: translate3d(2.2rem, -.85rem, 0) scale(0);
+    animation: splash3 ease-in-out 1s 1s forwards;
+  }
+  .splash4 {
+    position: absolute;
+    top: 3.34rem;
+    right: 1.96rem;
+    width: .83rem;
+    height: .42rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/splash04.png") no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transform: translate3d(-1.8rem, -.92rem, 0) scale(0);
+    animation: splash4 ease-in-out 1s 1s forwards;
+  }
+  .splash5 {
+    position: absolute;
+    top: 1.5rem;
+    left: 2.6rem;
+    width: 2.27rem;
+    height: .38rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/splash05.png") no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transform: translate3d(1.18rem, 1.32rem, 0) scale(0);
+    animation: splash5 ease-in-out 1s 1s forwards;
+  }
+  .loading {
+    position: absolute;
+    left: 2.24rem;
+    top: 4rem;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: loading ease-in-out 2s infinite;
+  }
+}
+.swiper-slide {
+  overflow: hidden;
+}
+.section1 {
+  background: #FFEBC7;
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: #FFEBC7 url("//img-cows.kkkd.com/2019/yh/annualBill/section2-bg.png") no-repeat bottom;
+    background-size: 7.5rem;
+  }
+  .text-box {
+    position: relative;
+  }
+  .arrow {
+    left: .95rem;
+  }
+  &.ani {
+    .bg {
+      animation: opacity 1s forwards;
+    }
+    .text-box {
+      h3 {
+        animation-delay: 1s;
+      }
+      p:nth-child(2) {
+        animation-delay: 2.2s;
+      }
+      p:nth-child(3) {
+        animation-delay: 3.2s;
+      }
+      p:nth-child(4) {
+        animation-delay: 4.2s;
+      }
+    }
+    .arrow {
+      animation-delay: 5s;
+    }
+  }
+}
+.section2 {
+  background-image: linear-gradient(0deg, #FFFFFF 0%, #FFC4C4 100%);
+  .chart-box {
+    position: relative;
+    text-align: center;
+    height: 50vh;
+    background-image: linear-gradient(0deg, #ededed 0%, #f3f3f3 11%, #FFFFFF 100%);
+    box-shadow: .04rem 0 .1rem 0 rgba(210,176,119,0.72);
+    h3 {
+      font-size: .38rem;
+      line-height: .53rem;
+      padding: .32rem 0 .1rem;
+      margin: 0 .67rem;
+      font-weight: normal;
+      color: #4A4A4A;
+      border-bottom: 2px dotted #979797;
+    }
+    .chart {
+      width: 7.5rem;
+      height: calc(~"50vh - .95rem");
+    }
+    .toothbg{
+      position: absolute;
+      bottom: -.3rem;
+      left: 0;
+      right: 0;
+      height: .59rem;
+      background: url("//img-cows.kkkd.com/2019/yh/annualBill/border-bg.png") repeat-x;
+      background-size: 7.5rem;
+    }
+  }
+  .text-box {
+    padding: .58rem 0 0 .67rem;
+    color: #D66E30;
+    span {
+      font-size: .38rem;
+    }
+  }
+  .arrow {
+    right: .67rem;
+  }
+  &.ani {
+    .text-box {
+      h3 {
+        animation-delay: .5s;
+      }
+      p:nth-child(2) {
+        animation-delay: 1.2s;
+      }
+      p:nth-child(3) {
+        animation-delay: 2.2s;
+      }
+      p:nth-child(4) {
+        animation-delay: 3.2s;
+      }
+      p:nth-child(5) {
+        animation-delay: 4.2s;
+      }
+      p:nth-child(6) {
+        animation-delay: 5.2s;
+      }
+    }
+    .arrow {
+      animation-delay: 6s;
+    }
+  }
+}
+
+.section3 {
+  background-image: linear-gradient(-180deg, #F0003D 0%, #FF6F6F 85%);
+  .text-box {
+    position: relative;
+    padding: .98rem 0 0 .44rem;
+    color: #FFA773;
+    h3 {
+      color: #FFD832;
+    }
+    span {
+      margin: 0;
+      font-size: .38rem;
+      color: #FFD832;
+    }
+  }
+  .num-box {
+    position: absolute;
+    bottom: 3.2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: bolder;
+    line-height: 1.12rem;
+    color: #FDF1E6;
+    text-shadow: 0 .1rem .1rem rgba(93,0,0,0.19);
+    p {
+      transform: translate3d(0, 1000%, 0);
+    }
+    strong {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      color: #FDF1E6;
+      letter-spacing: 0;
+      text-shadow: 0 .1rem .1rem rgba(93,0,0,0.22);
+    }
+  }
+  .arrow {
+    background-image: url("//img-cows.kkkd.com/2019/yh/annualBill/arrow4.png");
+    left: .6rem;
+  }
+  .line-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 7.5rem;
+    height: 100%;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/line.png") no-repeat bottom;
+    background-size: 7.5rem;
+    opacity: 0;
+  }
+  .redbag {
+    position: absolute;
+    bottom: 0;
+    left: 2.26rem;
+    width: 3rem;
+    height: 2.99rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/redbag.png") no-repeat bottom;
+    background-size: 3rem;
+    transform: translate3d(0, 200%, 0);
+  }
+  &.ani {
+    .text-box {
+      h3 {
+        animation-delay: .5s;
+      }
+      p:nth-child(2) {
+        animation-delay: 1.2s;
+      }
+      p:nth-child(3) {
+        animation-delay: 2.2s;
+      }
+      p:nth-child(4) {
+        animation-delay: 3.2s;
+      }
+      p:nth-child(5) {
+        animation-delay: 4.2s;
+      }
+    }
+    .num-box {
+      p {
+        animation: bigText .3s .5s ease-in forwards;
+      }
+    }
+    .line-bg {
+      animation: opacity ease-in .5s forwards;
+    }
+    .redbag {
+      animation: move .5s ease-in forwards;
+    }
+    .arrow {
+      animation-delay: 5s;
+    }
+  }
+}
+
+.section4 {
+  background-image: linear-gradient(0deg, #FFEE61 0%, #FFCF00 100%);
+  .text-box {
+    padding: .99rem 0 0 .88rem;
+    color: #4A4A4A;
+  }
+  .person-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6.06rem;
+    .person1 {
+      right: 0;
+      bottom: 0;
+      width: 1.44rem;
+      height: 4.91rem;
+    }
+    .person2 {
+      z-index: 5;
+      right: 2.26rem;
+      bottom: 0;
+      width: 1.75rem;
+      height: 4.15rem;
+    }
+    .person3 {
+      z-index: 6;
+      bottom: 0;
+      left: .35rem;
+      width: 2.08rem;
+      height: 3.72rem;
+    }
+    .person4 {
+      left: 0;
+      bottom: 0;
+      width: 1.33rem;
+      height: 4.38rem;
+    }
+    .person5 {
+      top: .16rem;
+      left: .36rem;
+      width: 3.38rem;
+      height: 4.27rem;
+    }
+    .person6 {
+      z-index: 8;
+      bottom: 0;
+      right: .24rem;
+      width: 3.77rem;
+      height: 3.76rem;
+    }
+    .person7 {
+      z-index: 7;
+      left: 1.34rem;
+      bottom: 0;
+      width: 3.77rem;
+      height: 4.56rem;
+    }
+    .person8 {
+      right: .45rem;
+      width: 3.39rem;
+      height: 4.54rem;
+    }
+    .person {
+      position: absolute;
+      opacity: 0;
+    }
+    .person-move {
+      position: absolute;
+      transform: translate3d(0, 200%, 0);
+    }
+  }
+  .arrow {
+    background-image: url("//img-cows.kkkd.com/2019/yh/annualBill/arrow4.png");
+    left: .88rem;
+    z-index: 10;
+  }
+  &.ani {
+    .text-box {
+      p:nth-child(2) {
+        animation-delay: .5s;
+      }
+      p:nth-child(3) {
+        animation-delay: 1.5s;
+      }
+      p:nth-child(4) {
+        animation-delay: 2.5s;
+      }
+      p:nth-child(5) {
+        animation-delay: 3.5s;
+      }
+    }
+    .person {
+      animation: opacity .5s ease-in forwards;
+    }
+    .person-move {
+      animation: personMove 1s ease-in forwards;
+    }
+    .person-move:nth-child(5) {
+      animation-delay: 2s;
+    }
+    .person-move:nth-child(6) {
+      animation-delay: 1s;
+    }
+    .person-move:nth-child(7) {
+    }
+    .person-move:nth-child(8) {
+      animation-delay: 3s;
+    }
+    .arrow {
+      animation-delay: 4s;
+    }
+  }
+}
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: radial-gradient(4.3rem circle, #453C83, #272856);
+  .year {
+    width: 3.83rem;
+    height: .81rem;
+    margin: 0 auto .2rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/2019.png") no-repeat;
+    background-size: cover;
+  }
+  .text-box {
+    margin-bottom: .2rem;
+    padding: 0;
+    text-align: center;
+    font-size: .64rem;
+    font-weight: bold;
+    line-height: .9rem;
+    background: linear-gradient(#FFE251, #FFC200);
+    -webkit-background-clip: text;
+    color: transparent;
+    p {
+      opacity: 1;
+    }
+  }
+  .redbag {
+    position: relative;
+    width: 3.63rem;
+    height: 4.37rem;
+    margin: 0 auto .647rem;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/redbag6.png") no-repeat;
+    background-size: cover;
+  }
+  .btn {
+    width: 3.65rem;
+    height: 1.15rem;
+    padding-bottom: .05rem;
+    font-size: .38rem;
+    font-weight: bold;
+    color: #C34C27;
+    background: url("//img-cows.kkkd.com/2019/yh/annualBill/btn.png") no-repeat;
+    background-size: cover;
+    border: none;
+  }
+  .download-btn {
+    display: none;
+  }
+  &.ani {
+    .text-box {
+      p {
+        opacity: 1;
+        animation: none;
+      }
+    }
+  }
+}
+
