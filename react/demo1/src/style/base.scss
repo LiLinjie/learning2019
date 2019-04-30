@@ -1,9 +1,26 @@
 @import "var";
-@import "reset";
+@import "~normalize.css";
 
-body {
+html, body {
   color: $font-color;
   background: $bg-color;
+  font-family: Helvetica;
+  font-size: $font-size;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height:inherit;
+  box-sizing: inherit;
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  -webkit-text-size-adjust: 100%!important;
+  outline: none;
+}
+
+li {
+  list-style: none;
 }
 
 a {
