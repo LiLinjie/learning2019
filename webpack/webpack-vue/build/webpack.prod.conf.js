@@ -3,6 +3,8 @@ const merge = require('webpack-merge')
 const baseConfig = require('./webpack.base.conf')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = merge(baseConfig, {
   mode: 'production',
@@ -12,6 +14,13 @@ module.exports = merge(baseConfig, {
     filename: 'js/[name].[chunkhash].js'
   },
   plugins: [
+    new CleanWebpackPlugin(),
+    new CopyWebpackPlugin([
+      {
+        from: 'static',
+        to: 'static'
+      }
+    ]),
     new HtmlWebpackPlugin({
       template: 'index.html',
       minify: {// 压缩 html

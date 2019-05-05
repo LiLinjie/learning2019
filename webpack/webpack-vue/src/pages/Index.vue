@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <img :src="bg" alt="">
-    {{msg}}
+    <img :src="icon" alt="">
+    <img src="/static/images/icon.png" alt="">
   </div>
 </template>
 
