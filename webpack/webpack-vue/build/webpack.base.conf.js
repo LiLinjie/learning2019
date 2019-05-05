@@ -1,4 +1,5 @@
 const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 // 路径处理函数
 const resolve = dir => path.join(__dirname, '..', dir)
@@ -27,7 +28,12 @@ module.exports = {
       },
       {
         test: /\.(less|css)$/,
-        use: ['style-loader', 'css-loader', 'less-loader', 'postcss-loader']
+        use: [
+          'style-loader',
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          'css-loader', 'less-loader', 'postcss-loader']
       },
       {
         test: /\.(png|gif|jpg|svg)$/,
