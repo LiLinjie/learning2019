@@ -1,7 +1,6 @@
 const path = require('path')
 const merge = require('webpack-merge')
 const baseConfig = require('./webpack.base.conf')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
@@ -10,7 +9,6 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const resolve = dir => path.join(__dirname, '..', dir)
 
 module.exports = merge(baseConfig, {
-  mode: 'development',
   devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
@@ -23,7 +21,6 @@ module.exports = merge(baseConfig, {
     ]
   },
   plugins: [
-    new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       template: 'index.html', // 本地模板的位置
     }),

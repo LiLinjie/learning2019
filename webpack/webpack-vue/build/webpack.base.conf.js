@@ -1,39 +1,35 @@
-const path = require('path')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-
-// 路径处理函数
-const resolve = dir => path.join(__dirname, '..', dir)
+const util = require('./util')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
+  mode: process.env.NODE_ENV,
   entry: {
     app: './src/main.js'
+  },
+  output: {
+    path: util.resolve('dist'),
+    filename: 'js/[name].[hash].js',
+    chunkFilename: 'js/[id].[chunkhash].js'
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'], // 引入 js vue json 文件时可以不用写后缀名
     alias: {
-      '@': resolve('src'), // 配置 @ 指向 src
+      '@': util.resolve('src'), // 配置 @ 指向 src
     },
   },
   module: {
     rules: [
+      ...util.eslint,
+      ...util.cssLoaders,
       {
         test: /\.vue$/,
         loader: 'vue-loader',
-        include: [resolve('src')]
+        include: [util.resolve('src')]
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src')]
-      },
-      {
-        test: /\.(less|css)$/,
-        use: [
-          'style-loader',
-          {
-            loader: MiniCssExtractPlugin.loader
-          },
-          'css-loader', 'less-loader', 'postcss-loader']
+        include: [util.resolve('src')]
       },
       {
         test: /\.(png|gif|jpg|svg)$/,
@@ -52,5 +48,11 @@ module.exports = {
         }
       },
     ]
+  },
+  plugins: [
+    new VueLoaderPlugin(),
+  ],
+  stats: {
+    children: false
   }
 }
