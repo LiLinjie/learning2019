@@ -8,6 +8,16 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 module.exports = merge(baseConfig, {
   mode: 'development',
   devtool: 'cheap-module-eval-source-map',
+  module: {
+    rules: [
+      {
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        enforce: 'pre',
+        include: [resolve('src')]
+      }
+    ]
+  },
   plugins: [
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({

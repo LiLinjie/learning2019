@@ -33,22 +33,18 @@ module.exports = {
         test: /\.(png|gif|jpg|svg)$/,
         loader: 'url-loader',  // 设置为 url-loader 解析，会将图片解析为 base64 加载
         options: {
-          limit: 102400, // 100kb
+          limit: 10240, // 10kb
+          name: 'images/[name].[hash:7].[ext]', // (原始文件名.hash.原始后缀名)
         }
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
-          limit: 102400, // 100kb
+          limit: 10240, // 10kb
+          name: 'images/[name].[hash:7].[ext]', // (原始文件名.hash.原始后缀名)
         }
       },
-      {
-        test: /\.(js|vue)$/,
-        loader: 'eslint-loader',
-        enforce: 'pre',
-        include: [resolve('src')]
-      }
     ]
   }
 }
