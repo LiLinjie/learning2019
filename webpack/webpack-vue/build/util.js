@@ -34,6 +34,16 @@ const cssLoaders = () => {
     // 如果有名称则创建一个该名称的 loader 来解析，例如 scss、less、stylus
     if (loaderName) {
       baseLoader.push(`${loaderName}-loader`)
+      if (loaderName === 'less') {
+        baseLoader.push({
+          loader: 'style-resources-loader',
+          options: {
+            patterns: [
+              resolve('src/assets/less/mixin.less')
+            ]
+          }
+        })
+      }
     }
     // 如果是生产环境就引入提取 css 的 loader
     if (IS_PROD) {

@@ -1,0 +1,16 @@
+// 多行显示...
+.line-camp(@clamp: 2) {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @clamp;
+  -webkit-box-orient: vertical;
+}
+
+.font-des-style (@fontSize, @color, @lineHeight, @textAlign: left) {
+  font-size: @fontSize;
+  color: @color;
+  line-height: @lineHeight;
+  text-align: @textAlign;
+}
