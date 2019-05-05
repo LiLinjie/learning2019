@@ -31,11 +31,17 @@ module.exports = {
       },
       {
         test: /\.(png|gif|jpg|svg)$/,
-        loader: 'url-loader'  // 设置为 url-loader 解析，会将图片解析为 base64 加载
+        loader: 'url-loader',  // 设置为 url-loader 解析，会将图片解析为 base64 加载
+        options: {
+          limit: 102400, // 100kb
+        }
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader'
+        loader: 'url-loader',
+        options: {
+          limit: 102400, // 100kb
+        }
       },
       {
         test: /\.(js|vue)$/,

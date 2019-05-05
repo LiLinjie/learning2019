@@ -1,12 +1,13 @@
 <template>
   <div class="container">
-    Index
+    <img :src="bg" alt="">
     {{msg}}
   </div>
 </template>
 
 <script>
 import icon from '@/assets/images/icon.png';
+import bg from '@/assets/images/bg.png';
 
 export default {
   name: 'index',
@@ -14,6 +15,7 @@ export default {
     return {
       icon,
       msg: '',
+      bg,
     };
   },
   created () {
