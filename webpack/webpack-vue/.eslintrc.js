@@ -16,6 +16,7 @@ module.exports = {
   // 个性化规则
   rules: {
     "space-before-function-paren": ["error", "always"],
+    'no-console': 'off',
   },
   settings: {
     'import/resolver': {

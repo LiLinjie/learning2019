@@ -3,6 +3,7 @@ const baseConfig = require('./webpack.base.conf')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
+const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 
 module.exports = merge(baseConfig, {
   mode: 'development',
@@ -13,6 +14,7 @@ module.exports = merge(baseConfig, {
       template: 'index.html', // 本地模板的位置
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new FriendlyErrorsPlugin()
   ],
   devServer: {
     hot: true, // 热更新
