@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-Vue.use(Router)
+Vue.use(Router);
 
 // 异步加载模块
 const Index = async (resolve) => {
@@ -15,7 +15,7 @@ export default new Router({
     {
       path: '/',
       name: 'Index',
-      component: Index
-    }
-  ]
-})
+      component: Index,
+    },
+  ],
+});

@@ -6,27 +6,27 @@
 </template>
 
 <script>
-  import icon from '@/assets/images/icon.png'
+import icon from '@/assets/images/icon.png';
 
-  export default {
-    name: 'index',
-    data () {
-      return {
-        icon,
-        msg: ''
-      }
+export default {
+  name: 'index',
+  data () {
+    return {
+      icon,
+      msg: '',
+    };
+  },
+  created () {
+    this.getMsg();
+  },
+  methods: {
+    getMsg () {
+      setTimeout(() => {
+        this.msg = 'Hello World';
+      }, 17);
     },
-    created() {
-      this.getMsg()
-    },
-    methods: {
-      getMsg () {
-        setTimeout(() => {
-          this.msg = 'Hello World'
-        }, 17)
-      }
-    }
-  }
+  },
+};
 </script>
 
 <style scoped lang="less">

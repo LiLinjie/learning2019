@@ -14,8 +14,15 @@
     "@babel/core": "^7.4.4",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "autoprefixer": "^9.5.1",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-vue": "^5.2.2",
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
@@ -34,5 +41,9 @@
     "vue": "^2.6.10",
     "vue-router": "^3.0.6"
   },
-  "browserslist": ["last 2 versions", "Android >= 2.3", "iOS >= 7"]
+  "browserslist": [
+    "last 2 versions",
+    "Android >= 2.3",
+    "iOS >= 7"
+  ]
 }
