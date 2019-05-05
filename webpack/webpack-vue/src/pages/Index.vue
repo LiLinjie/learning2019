@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     Index
+    {{msg}}
   </div>
 </template>
 

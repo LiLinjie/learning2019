@@ -33,5 +33,6 @@
   "dependencies": {
     "vue": "^2.6.10",
     "vue-router": "^3.0.6"
-  }
+  },
+  "browserslist": ["last 2 versions", "Android >= 2.3", "iOS >= 7"]
 }
