@@ -14,15 +14,37 @@ class LogoTitle extends React.Component {
 }
 
 class HomeScreen extends React.Component {
-  static navigationOptions = {
-    // title: 'Home'
-    headerTitle: <LogoTitle />
+  static navigationOptions = ({ navigation }) => {
+    return {
+      // title: 'Home'
+      headerTitle: <LogoTitle />,
+      headerRight: (
+        <Button
+          onPress={navigation.getParam('increaseCount')}
+          title="+1"
+          color="#fff"
+        />
+      ),
+    }
   }
+
+  componentDidMount() {
+    this.props.navigation.setParams({ increaseCount: this._increaseCount });
+  }
+
+  state = {
+    count: 0,
+  };
+
+  _increaseCount = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
 
   render () {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
         <Text>Home Screen</Text>
+        <Text>{this.state.count}</Text>
         <Button
           title="Go to Details"
           onPress={() => this.props.navigation.navigate('Details', {
