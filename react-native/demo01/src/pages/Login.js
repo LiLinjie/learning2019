@@ -8,7 +8,8 @@ import Button from '../components/Button';
 
 @connect(state => {
   return {
-    userInfo: state.get('user').toJS()
+    // userInfo: state.get('user').toJS()
+    userInfo: state.user
   }
 }, (dispatch) => ({
   login (payload) {

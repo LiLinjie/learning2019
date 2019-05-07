@@ -8,7 +8,8 @@ import { unitWidth } from '../utils';
 
 @connect(state => {
   return {
-    userInfo: state.getIn(['user', 'userInfo'])
+    // userInfo: state.getIn(['user', 'userInfo'])
+    userInfo: state.user.userInfo
   }
 }, (dispatch) => ({
   logout () {

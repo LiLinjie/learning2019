@@ -75,7 +75,7 @@ export const AppNavigation = createStackNavigator({
   ...UNAUTHEN_ROUTES,
   ...GLOBAL_SCREEN
 }, {
-  initialRouteName: 'Launcher',
+  initialRouteName: 'AppIntro',
   header: null,
   transitionConfig: () => ({
     screenInterpolator: StackViewStyleInterpolator.forHorizontal
