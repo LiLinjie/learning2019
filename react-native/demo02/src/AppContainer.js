@@ -3,6 +3,17 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { View, Text, Button } from 'react-native';
 
 class HomeScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Home',
+    headerStyle: {
+      backgroundColor: '#f4511e'
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold'
+    }
+  }
+
   render () {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -11,7 +22,7 @@ class HomeScreen extends React.Component {
           title="Go to Details"
           onPress={() => this.props.navigation.navigate('Details', {
             itemId: 86,
-            otherParams: 'anything you want here'
+            otherParam: 'anything you want here'
           })}
         />
       </View>
@@ -20,6 +31,12 @@ class HomeScreen extends React.Component {
 }
 
 class DetailsScreen extends React.Component {
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: navigation.getParam('otherParam', 'A Nested Details Screen')
+    }
+  }
+
   render() {
     const { navigation } = this.props;
     const itemId = navigation.getParam('itemId', 'NO-ID');
@@ -43,6 +60,10 @@ class DetailsScreen extends React.Component {
         <Button
           title="Go back"
           onPress={() => this.props.navigation.goBack()}
+        />
+        <Button
+          title="Update the title"
+          onPress={() => this.props.navigation.setParams({otherParam: 'Updated!'})}
         />
       </View>
     )
