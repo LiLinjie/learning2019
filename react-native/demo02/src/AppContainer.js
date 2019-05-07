@@ -1,17 +1,22 @@
 import React from 'react';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, Image } from 'react-native';
+
+class LogoTitle extends React.Component {
+  render() {
+    return (
+      <Image
+        source={require('./images/icon.png')}
+        style={{ width: 30, height: 30 }}
+      />
+    );
+  }
+}
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
-    title: 'Home',
-    headerStyle: {
-      backgroundColor: '#f4511e'
-    },
-    headerTintColor: '#fff',
-    headerTitleStyle: {
-      fontWeight: 'bold'
-    }
+    // title: 'Home'
+    headerTitle: <LogoTitle />
   }
 
   render () {
@@ -31,9 +36,13 @@ class HomeScreen extends React.Component {
 }
 
 class DetailsScreen extends React.Component {
-  static navigationOptions = ({ navigation }) => {
+  static navigationOptions = ({ navigation, navigationOptions }) => {
     return {
-      title: navigation.getParam('otherParam', 'A Nested Details Screen')
+      title: navigation.getParam('otherParam', 'A Nested Details Screen'),
+      headerStyle: {
+        backgroundColor: navigationOptions.headerTintColor,
+      },
+      headerTintColor: navigationOptions.headerStyle.backgroundColor,
     }
   }
 
@@ -78,7 +87,16 @@ const AppContainer = createStackNavigator(
     Details: DetailsScreen
   },
   {
-    initialRouteName: 'Home'
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: '#f4511e'
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold'
+      }
+    }
   }
 );
 
