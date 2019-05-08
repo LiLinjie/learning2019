@@ -101,7 +101,7 @@ class DetailsScreen extends React.Component {
   }
 }
 
-const AppContainer = createStackNavigator(
+const AppNavigator = createStackNavigator(
   {
     Home: {
       screen: HomeScreen
@@ -122,4 +122,6 @@ const AppContainer = createStackNavigator(
   }
 );
 
-export default createAppContainer(AppContainer);
+const AppContainer = createAppContainer(AppNavigator);
+
+export default AppContainer;
