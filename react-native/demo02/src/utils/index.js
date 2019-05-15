@@ -90,3 +90,47 @@ export function imgParser (url, width, height, format = 'jpg', q = 90, mode = 0)
     return url;
   }
 }
+
+export function getShowPrice (price) {
+  const _price = ((price / 100) + '').indexOf('.') > -1 ? (price / 100).toFixed(2) : (price / 100);
+  return _price;
+}
+
+export function getOwnRate (product, userInfo, fromCms = false) {
+  let ret = 0;
+  const scale = fromCms ? 100 : 1;
+  try {
+    const { rate = 0.468 } = userInfo;
+    const { commissionRate } = product;
+    if (rate && commissionRate) {
+      ret = (commissionRate * rate / scale).toFixed(2);
+    }
+  } catch (e) {
+    console.log(e);
+  }
+  return ret;
+}
+
+export function getOwnCommission (product, userInfo, fromCms = false) {
+  let ret = 0;
+  const scale = fromCms ? 100 : 1;
+  try {
+    const { rate = 0.468 } = userInfo;
+    const dlCommissionRate = getOwnRate(product, userInfo, fromCms);
+    const { commissionAmount, discountPrice, commissionRate, promotionPrice, es } = product;
+    if (rate && commissionRate) {
+      if (commissionAmount) {
+        ret = (commissionAmount * rate / scale).toFixed(1);
+      } else if (discountPrice) {
+        ret = (discountPrice * dlCommissionRate * 0.01 / 100).toFixed(1);
+      } else if (!es) {
+        ret = (promotionPrice * dlCommissionRate * 0.01 ).toFixed(1);
+      } else {
+        ret = '未知';
+      }
+    }
+  } catch (e) {
+
+  }
+  return ret;
+}

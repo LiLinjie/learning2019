@@ -38,7 +38,6 @@ export default class ImgGroup extends React.Component {
 
   render () {
     const { component: { styleName, jsonContent: { isShowLine, contents } } } = this.props;
-    console.log(this.props)
     const { imgs } = this.state;
 
     return (

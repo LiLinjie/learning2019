@@ -35,11 +35,11 @@ async function request (method, url, body) {
   let res;
   try {
     res = await fetch(url, options);
-    console.log(res);
     if (res.status !== 200) {
       alert(res.statusText);
     }
     res = await res.json();
+    console.log(res);
     if (res.status !== 1) {
       alert(res.msg);
     }
