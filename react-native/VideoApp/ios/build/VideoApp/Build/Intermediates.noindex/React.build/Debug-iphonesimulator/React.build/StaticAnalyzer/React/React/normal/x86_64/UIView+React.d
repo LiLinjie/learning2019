@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Views/UIView+React.m \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/ios/build/VideoApp/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/ios/build/VideoApp/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Views/RCTLayout.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/ios/build/VideoApp/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/ios/build/VideoApp/Build/Products/Debug-iphonesimulator/include/yoga/YGValue.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTRootView.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/ouer/workspace/ouer/RN/VideoApp/node_modules/react-native/React/Base/RCTInvalidating.h
