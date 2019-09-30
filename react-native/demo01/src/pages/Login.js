@@ -46,9 +46,6 @@ export default class Login extends React.PureComponent {
   componentWillReceiveProps(newProps) {
     console.log('Component WILL RECEIVE PROPS!', this.props.userInfo)
   }
-  shouldComponentUpdate(newProps, newState) {
-    return true;
-  }
   componentWillUpdate(nextProps, nextState) {
     console.log('Component WILL UPDATE!', this.props.userInfo);
   }
